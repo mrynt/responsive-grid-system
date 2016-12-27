@@ -1,0 +1,112 @@
+html {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box; 
+  -moz-box-sizing:border-box; 
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box; 
+  line-height: 1.15; // 2
+  -ms-text-size-adjust: 100%; // 3
+  -webkit-text-size-adjust: 100%; // 3
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus { /*OR .rest:focus*/
+    outline:none;
+}
+
+@at-root {
+  @-ms-viewport { width: device-width; }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  line-height: inherit;
+}
+
+button,
+input { // 1
+  overflow: visible;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+[hidden] {
+  display: none !important;
+}

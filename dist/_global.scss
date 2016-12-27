@@ -1,0 +1,12 @@
+.wrapper{
+	width: 100%;
+	padding: 15px;
+}
+
+ .row {
+    @extend %clearfix;
+ 
+    & + & {
+        margin-top:$grid-spacing;
+    }
+}

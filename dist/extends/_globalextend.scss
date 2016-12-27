@@ -1,0 +1,7 @@
+// GLOBAL EXTENDS
+
+%clearfix:after {
+    display:block;
+    clear:both;
+    content:'';
+}
